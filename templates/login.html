@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'main' %}
+<div class="overlay">
+    <!-- LOGN IN FORM by Omar Dsoky -->
+    <form class="lg">
+       <!--   con = Container  for items in the form-->
+       <div class="con">
+       <!--     Start  header Content  -->
+       <header class="head-form">
+          <h2>Log In</h2>
+          <!--     A welcome message or an explanation of the login form -->
+          <p>login here using your username and password</p>
+       </header>
+       <!--     End  header Content  -->
+      
+       <div class="field-set">
+         <div><p>Enter Username</p></div>
+          <!--   user name -->
+             <span class="input-item">
+               <i class="fa fa-user-circle"></i>
+             </span>
+            <!--   user name Input-->
+             <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+         
+          <br> <br>
+          <div><p>Enter Password</p></div>
+         
+               <!--   Password -->
+         
+          <span class="input-item">
+            <i class="fa fa-key"></i>
+           </span>
+          <!--   Password Input-->
+          <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+         
+    <!--      Show/hide password  -->
+        
+         
+         
+          <br>
+    <!--        buttons -->
+    <!--      button LogIn -->
+          <button class="fs"> Log In </button>
+       </div>
+      
+    <!--   other buttons -->
+       <div class="other">
+    <!--      Forgot Password button-->
+          <button class="fs submits frgt-pass"><a class="ft" href="register">Forgot Password?</a></button>
+    <!--     Sign Up button -->
+          <button class="fs submits sign-up" href="register.html">Sign Up 
+    <!--         Sign Up font icon -->
+          <i class="fa fa-user-plus" aria-hidden="true" href="register.html"></i>
+          </button>
+    <!--      End Other the Division -->
+       </div>
+         
+    <!--   End Conrainer  -->
+      </div>
+      
+      <!-- End Form -->
+    </form>
+    </div>
+
+{% endblock 'main' %}
